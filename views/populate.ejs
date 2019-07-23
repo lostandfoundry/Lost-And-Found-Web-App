@@ -1,0 +1,402 @@
+<!--
+  Code contributed by Nimish Bongale and team 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost&Found</title>
+    <meta name="description" content="Find your near and dear ones in case of a natural calamity.">
+    <meta name="keywords" content="Find your near and dear ones in case of a natural calamity.">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <section id="banner" class="banner">
+        <div class="bg-color">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/"><img src="/img/Screenshot from 2019-06-29 14-03-04.png"
+                                    class="img-responsive" style="width: 150px; margin-top: -27px;"></a>
+                        </div>
+                        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Services</a></li>
+                                <li><a href="/">About</a></li>
+                                <li><a href="/">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="banner-info">
+                        <div class="banner-text text-center">
+                            <h1 class="white">Populate our graph.</h1>
+                            <p>In order for our proposed system to work, we must have to fill our database first.
+                                We do this before the disaster even occurs, in preparation for the worst.
+                            </p>
+                            <a href="/search" class="btn btn-appoint">Search for your near and dear ones</a>
+                            <a href="/claim" class="btn btn-appoint">Claim presence</a>
+                        </div>
+                        <center>
+                            <a href="/search#results" class="btn btn-appoint">Go to results</a>
+                        </center>
+                        <div class="overlay-detail text-center">
+                            <a href="#about"><i class="fa fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-12">
+                    <div class="section-title">
+                        <h2 class="head-title lg-line">Tips on<br>How to add in inforamtion<br></h2>
+                        <hr class="botm-line">
+                        <p class="sec-para">Add in your details for future use.</p>
+                    </div>
+                </div>
+                <div class="col-md-9 col-sm-8 col-xs-12">
+                    <div style="visibility: visible;" class="col-sm-9 more-features-box">
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i> </div>
+                            <div class="more-features-box-text-description">
+                                <h3>Relationships</h3>
+                                <p>While thinking about this project, we narrowed down on 5 relationships,
+                                    that effectively cover all possible human ties with other entities. Make sure
+                                    to stick by them while creating your graph relations.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i> </div>
+                            <div class="more-features-box-text-description">
+                                <h3>Delay</h3>
+                                <p>There might be a slight delay when it comes to adding nodes and relationships in
+                                    the graph. Please be patient.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i> </div>
+                            <div class="more-features-box-text-description">
+                                <h3>Rules and limitations</h3>
+                                <p>Maxmimum number of nodes per person is set to 1. Any duplicates will be periodcally
+                                    cleared.
+                                    There is no upper bound on the number of relations, however it becomes
+                                    imperative here to mention that multiple relations
+                                    between 2 nodes would serve absolutely no purpose.<br>
+                                    Nodes could be of the following types (case sensitive):-<br>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;person
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;pet
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;other
+                                        </li>
+                                    </ul>
+
+                                    Relationships could be of type (case sensitive):-<br>
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;friend
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;relative
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;neighbour
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;colleague
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;owner
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-circle"></i>&nbsp;&nbsp;other
+                                        </li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="addpeep" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="ser-title">Add your details</h2>
+                    <hr class="botm-line">
+                </div>
+
+                <div class="col-md-8 col-sm-8 marb20">
+                    <div class="contact-info">
+                        <h3 class="cnt-ttl"></h3>
+                        <div class="space"></div>
+                        <div id="sendmessage"></div>
+                        <div id="errormessage"></div>
+                        <form action="/person/add" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <label>Type (person, pet or other)</label><br>
+                                <select name="type">
+                                    <option name="person">person</option>
+                                    <option name="pet">pet</option>
+                                    <option name="other">other</option>
+                                </select>
+                                <!--<input type="text" name="type" class="form-control br-radius-zero" id="type"
+                                    placeholder="Account type" data-rule="required" data-msg="This field is required" />
+                                <div class="validation"></div>-->
+                            </div>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" class="form-control br-radius-zero" id="name"
+                                    placeholder="Your Name" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control br-radius-zero" name="email" id="email"
+                                    placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Role</label>
+                                <input class="form-control br-radius-zero" type="text" name="role" data-rule="required"
+                                    data-msg="Enter your role" placeholder="Your Role"></input>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Organization</label>
+                                <input class="form-control br-radius-zero" type="text" name="org" data-rule="required"
+                                    data-msg="Enter your Organization" placeholder="Your Oragnization"></input>
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group">
+                                <label>Geo-location (nearest county/town/city)</label>
+                                <input type="text" name="geo" class="form-control br-radius-zero" id="geo"
+                                    placeholder="Your Geographic location" data-rule="required"
+                                    data-msg="Field cannot be left blank" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-action">
+                                <button type="submit" value="submit" class="btn btn-form" id="singlesubmit">Create
+                                    node</button><br><br>
+                                <label>(After the page refreshes, please scroll down to see the
+                                    results or alternatively click on the "Go to results" button)&nbsp;&nbsp;
+                                    <i class="fa fa-arrow-circle-down"></i>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="ser-title">Establish a relationship</h2>
+                    <hr class="botm-line">
+                </div>
+
+                <div class="col-md-8 col-sm-8 marb20">
+                    <div class="contact-info">
+                        <h3 class="cnt-ttl"></h3>
+                        <div class="space"></div>
+                        <div id="sendmessage"></div>
+                        <div id="errormessage"></div>
+                        <form action="/person/link" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <label>Name 1</label>
+                                <input type="text" name="name1" class="form-control br-radius-zero" id="name1"
+                                    placeholder="Your Name" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Relationship (friend, relative, neighbour, colleague or other)</label><br>
+                                <!--<input type="text" name="connect" class="form-control br-radius-zero" id="connect"
+                                    placeholder="Enter relation" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />-->
+                                <select name="connect">
+                                    <option name="friend">friend</option>
+                                    <option name="relative">relative</option>
+                                    <option name="neighbour">neighbour</option>
+                                    <option name="colleague">colleague</option>
+                                    <option name="other">other</option>
+                                </select>
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Name 2</label>
+                                <input type="text" name="name2" class="form-control br-radius-zero" id="name2"
+                                    placeholder="Enter the second name" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-action">
+                                <button type="submit" value="submit" class="btn btn-form">Create
+                                    relation</button><br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="ser-title">Delete a relationship</h2>
+                    <hr class="botm-line">
+                </div>
+
+                <div class="col-md-8 col-sm-8 marb20">
+                    <div class="contact-info">
+                        <h3 class="cnt-ttl"></h3>
+                        <div class="space"></div>
+                        <div id="sendmessage"></div>
+                        <div id="errormessage"></div>
+                        <form action="/person/del" method="post" role="form" class="contactForm">
+                            <div class="form-group">
+                                <label>Name 1</label>
+                                <input type="text" name="name1" class="form-control br-radius-zero" id="name1"
+                                    placeholder="Your Name" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Name 2</label>
+                                <input type="text" name="name2" class="form-control br-radius-zero" id="name2"
+                                    placeholder="Enter the second name" data-rule="minlen:4"
+                                    data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+
+                            <div class="form-action">
+                                <button type="submit" value="submit" class="btn btn-form">Delete
+                                    relation</button><br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 marb20">
+                    <h1>Results</h1>
+                    <h4>(Information will be displayed here)</h4><br>
+                    <ul>
+                        <% people.forEach(function(person){ %>
+                        <li>
+                            <i class="fa fa-circle"></i>&nbsp;&nbsp;
+                            <label>Name: </label>
+                            <%= person.title %><br>
+                            <label>Role: </label>
+                            <%= person.role %><br>
+                            <label>Organization: </label>
+                            <%= person.org %><br>
+                        </li><br>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="top-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 marb20">
+                        <div class="info-sec">
+                            <p>Copyright © Lost&Found
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 marb20">
+                        <div class="ftr-tle">
+                            <h4 class="white no-padding">Quick Links</h4>
+                        </div>
+                        <div class="info-sec">
+                            <ul class="quick-info">
+                                <li><a href="/populate"><i class="fa fa-circle"></i>Add in your details</a></li>
+                                <li><a href="/search"><i class="fa fa-circle"></i>Initiate Search</a></li>
+                                <li><a href="/claim"><i class="fa fa-circle"></i>Claim presence of entity</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 marb20">
+                        <div class="ftr-tle">
+                            <h4 class="white no-padding">Find us over on&nbsp;&nbsp;<i
+                                    class="fa fa-arrow-circle-down"></i></h4>
+                        </div>
+                        <div class="info-sec">
+                            <ul class="social-icon">
+                                <li class="bglight-blue"><i class="fa fa-facebook"></i></li>
+                                <li class="bgdark-blue"><i class="fa fa-linkedin"></i></li>
+                                <li class="bglight-blue"><i class="fa fa-twitter"></i></li>
+                                <li class="bgdark-blue"><i class="fa fa-github"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.easing.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script src="/contactform/contactform.js"></script>
+</body>
+
+</html>
