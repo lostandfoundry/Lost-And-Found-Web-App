@@ -1,5 +1,9 @@
 ## lostandfoundry - Complete End to End solution 
 
+[![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
+![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
+![](https://img.shields.io/badge/build-passing-green.svg)
+
 A complete Web Application implementing the lostandfound concept, built using the GrEBoN/NEBoN stack:-
 
 * Gr/N - GraphDB/Neo4j
@@ -7,9 +11,6 @@ A complete Web Application implementing the lostandfound concept, built using th
 * Bo - Bootstrap 
 * N - NodeJS
 
-[![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
-![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
-![](https://img.shields.io/badge/build-passing-green.svg)
 
 ### Table of Contents
 * [Requirements](#requirements)
