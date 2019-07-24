@@ -1,6 +1,11 @@
 ## lostandfoundry - Complete End to End solution 
 
-Basic Web project with ExpressJS on NodeJS
+A complete Web Application implementing the lostandfound concept, built using the GrEBoN/NEBoN stack:-
+
+Gr/N - GraphDB/Neo4j
+E - ExpressJS
+Bo - Bootstrap 
+N - NodeJS
 
 [![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
 ![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
