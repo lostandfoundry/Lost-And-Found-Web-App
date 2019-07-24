@@ -1,9 +1,10 @@
-## copyoflostandfound2
+## lostandfoundry - Complete End to End solution 
 
 Basic Web project with ExpressJS on NodeJS
 
 [![](https://img.shields.io/badge/IBM%20Cloud-powered-blue.svg)](https://bluemix.net)
 ![Platform](https://img.shields.io/badge/platform-NODE-lightgrey.svg?style=flat)
+![](https://img.shields.io/badge/build-passing-green.svg)
 
 ### Table of Contents
 * [Requirements](#requirements)
@@ -59,9 +60,38 @@ bx dev run
 
 #### Using your local development environment
 
+The website can be run on a local server by following the steps given below:-
 
+First, clone the repository in your desired directory, and navigate to it.
 
-##### Endpoints
+```git
+git clone https://github.com/nimishbongale/lostandfoundry.git
+cd yourdirectory
+```
+Make sure you have NodeJS installed on your system.
+Install the node modules by running:-
+
+```node
+npm install
+```
+
+If you get an EAuth failure, open the command line/terminal as an adminitrator, or use sudo:-
+
+```bash
+sudo npm install
+```
+Now run the app using:-
+
+```node
+npm start
+```
+
+OR, alternatively
+
+```node
+node app
+```
+Open localhost:3000 on your preferred browser to view the app running. 
 
 
 ##### Session Store
