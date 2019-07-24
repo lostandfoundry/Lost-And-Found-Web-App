@@ -25,7 +25,7 @@
     <link href="/css/style2.css" rel="stylesheet" type="text/css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" aria-label="button">
     <section id="banner" class="banner">
         <div class="bg-color">
             <nav class="navbar navbar-default navbar-fixed-top">
@@ -64,7 +64,7 @@
                             <a href="/search" class="btn btn-appoint">Search for your near and dear ones</a>
                         </div>
                         <div class="overlay-detail text-center">
-                            <a href="#about"><i class="fa fa-angle-down"></i></a>
+                            <a href="#about" aria-label="about"><i class="fa fa-angle-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -138,40 +138,41 @@
                         <div id="errormessage"></div>
                         <form action="/claim/person/person" method="post" role="form" class="contactForm">
                             <div class="form-group">
-                                <label>Name (if provided)</label>
-                                <input type="text" name="name" class="form-control br-radius-zero" id="name"
-                                    placeholder="Your Name" data-rule="minlen:4"
-                                    data-msg="Please enter at least 4 chars" />
+                                <label>Name (if provided)
+                                    <input type="text" name="name" class="form-control br-radius-zero" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" /></label>
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <label>Geo Location</label>
-                                <input type="text" name="geo" class="form-control br-radius-zero" id="geo"
-                                    placeholder="Your Location" data-rule="minlen:4"
-                                    data-msg="Please enter at least 4 chars" />
+                                <label>Geo Location
+                                    <input type="text" name="geo" class="form-control br-radius-zero" id="geo"
+                                        placeholder="Your Location" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" /></label>
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <label>Person Condition</label>
-                                <input type="text" class="form-control br-radius-zero" name="condition" id="condition"
-                                    placeholder="Person Condition" data-rule="minlen:4"
-                                    data-msg="Please enter at least 8 characters" />
+                                <label>Person Condition
+                                    <input type="text" class="form-control br-radius-zero" name="condition"
+                                        id="condition" placeholder="Person Condition" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 characters" /></label>
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <label>Custom Message</label>
-                                <textarea class="form-control br-radius-zero" name="custommsg" rows="5" id="custommsg"
-                                    data-rule="required" data-msg="Please specify relevant information"
-                                    placeholder="Please specify relevant information"></textarea>
+                                <label>Custom Message
+                                    <textarea class="form-control br-radius-zero" name="custommsg" rows="5"
+                                        id="custommsg" data-rule="required"
+                                        data-msg="Please specify relevant information"
+                                        placeholder="Please specify relevant information"></textarea></label>
                                 <div class="validation"></div>
 
                             </div>
                             <div class="form-group">
-                                <label>Iris Scan/Birthmark/Fingerprint Images</label>
-                                <input type="file" name="pic" accept="image/*">
+                                <label>Iris Scan/Birthmark/Fingerprint Images
+                                    <input type="file" name="pic" accept="image/*"></label>
                             </div>
 
                             <div class="form-action">
