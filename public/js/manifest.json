@@ -1,0 +1,21 @@
+{
+    "short_name": "lost&found",
+    "name": "lostandfoundry",
+    "icons": [
+        {
+            "src": "../img/Screenshot from 2019-06-29 14-03-04.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "../img/Screenshot from 2019-06-29 14-03-04.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#fff"
+}

@@ -14,6 +14,9 @@
     <title>Lost&Found</title>
     <meta name="description" content="Find your near and dear ones in case of a natural calamity.">
     <meta name="keywords" content="Find your near and dear ones in case of a natural calamity.">
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="manifest" href="js/manifest.json">
+
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -36,7 +39,8 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="/"><img src="/img/Screenshot from 2019-06-29 14-03-04.png"
-                                    class="img-responsive" style="width: 150px; margin-top: -27px;"></a>
+                                    alt="Not showing" class="img-responsive" lazyload="on"
+                                    style="width: 150px; margin-top: -27px;"></a>
                         </div>
                         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                             <ul class="nav navbar-nav">
@@ -180,7 +184,7 @@
                                     <option name="pet">pet</option>
                                     <option name="other">other</option>
                                 </select>
-                              
+
                             </div>
                             <div class="form-group">
                                 <label>Name</label>
@@ -254,7 +258,7 @@
 
                             <div class="form-group">
                                 <label>Relationship (friend, relative, neighbour, colleague or other)</label><br>
-                              
+
                                 <select name="connect">
                                     <option name="friend">friend</option>
                                     <option name="relative">relative</option>
@@ -392,11 +396,17 @@
         </div>
     </footer>
 
+    <!--JS Scripts-->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/jquery.easing.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom.js"></script>
     <script src="/contactform/contactform.js"></script>
+    <script>
+        if ('serviceWorker' in window.navigator) {
+            navigator.serviceWorker.register('js/service-worker.js');
+        }
+    </script>
 </body>
 
 </html>

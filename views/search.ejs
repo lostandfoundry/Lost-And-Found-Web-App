@@ -14,6 +14,9 @@
     <title>Lost&Found</title>
     <meta name="description" content="Find your near and dear ones in case of a natural calamity.">
     <meta name="keywords" content="Find your near and dear ones in case of a natural calamity.">
+    <meta name="theme-color" content="#317EFB" />
+    <link rel="manifest" href="js/manifest.json">
+
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -29,13 +32,15 @@
                 <div class="container">
                     <div class="col-md-12">
                         <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                                aria-label="button">
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="/"><img src="img/Screenshot from 2019-06-29 14-03-04.png"
-                                    class="img-responsive" style="width: 150px; margin-top: -27px;"></a>
+                                    alt="Not showing" class="img-responsive" lazyload="on"
+                                    style="width: 150px; margin-top: -27px;"></a>
                         </div>
                         <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                             <ul class="nav navbar-nav">
@@ -63,7 +68,7 @@
                             <a href="/search#results" class="btn btn-appoint">Go to results</a>
                         </center>
                         <div class="overlay-detail text-center">
-                            <a href="#about"><i class="fa fa-angle-down"></i></a>
+                            <a href="#about" aria-label="about"><i class="fa fa-angle-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -135,23 +140,24 @@
                         <div id="errormessage"></div>
                         <form action="/search" method="post" role="form" class="contactform">
                             <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" name="name" class="form-control br-radius-zero" id="name"
-                                    placeholder="Your Name" data-msg="Please enter at least 4 chars"
-                                    data-rule="required" />
+                                <label>Name
+                                    <input type="text" name="name" class="form-control br-radius-zero" id="name"
+                                        placeholder="Your Name" data-msg="Please enter at least 4 chars"
+                                        data-rule="required" /></label>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <label>Role</label>
-                                <input class="form-control br-radius-zero" type="text" name="role" id="role"
-                                    data-msg="Enter your role" placeholder="Your Role" data-rule="required"></input>
+                                <label>Role
+                                    <input class="form-control br-radius-zero" type="text" name="role" id="role"
+                                        data-msg="Enter your role" placeholder="Your Role"
+                                        data-rule="required"></input></label>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-group">
-                                <label>Organization</label>
-                                <input class="form-control br-radius-zero" type="text" name="org" id="org"
-                                    data-msg="Enter your Organization" placeholder="Your Oragnization"
-                                    data-rule="required"></input>
+                                <label>Organization
+                                    <input class="form-control br-radius-zero" type="text" name="org" id="org"
+                                        data-msg="Enter your Organization" placeholder="Your Oragnization"
+                                        data-rule="required"></input></label>
                                 <div class="validation"></div>
                             </div>
                             <div class="form-action">
@@ -240,6 +246,11 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/custom.js"></script>
     <script src="/contactform/contactform.js"></script>
+    <script>
+        if ('serviceWorker' in window.navigator) {
+            navigator.serviceWorker.register('js/service-worker.js');
+        }
+    </script>
 
 </body>
 

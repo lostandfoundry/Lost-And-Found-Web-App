@@ -14,6 +14,8 @@
   <title>Lost&Found</title>
   <meta name="description" content="Find your near and dear ones in case of a natural calamity.">
   <meta name="keywords" content="Find your near and dear ones in case of a natural calamity.">
+  <meta name="theme-color" content="#317EFB" />
+  <link rel="manifest" href="js/manifest.json">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -29,12 +31,13 @@
         <div class="container">
           <div class="col-md-12">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                aria-label="button">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/"><img src="img/Screenshot from 2019-06-29 14-03-04.png"
+              <a class="navbar-brand" href="/"><img src="img/Screenshot from 2019-06-29 14-03-04.png" alt="Not showing"
                   class="img-responsive" style="width: 150px; margin-top: -27px;"></a>
             </div>
             <div class="collapse navbar-collapse navbar-right" id="myNavbar">
@@ -52,7 +55,8 @@
         <div class="row">
           <div class="banner-info">
             <div class="banner-logo text-center">
-              <img src="img/Screenshot from 2019-06-29 14-03-04.png" class="img-responsive" height="150" width="200">
+              <img src="img/Screenshot from 2019-06-29 14-03-04.png" alt="Not showing" class="img-responsive"
+                lazyload="on" height="150" width="200">
             </div>
             <div class="banner-text text-center">
               <h1 class="white">Find your blood relations, friends, neighbours or colleagues.</h1>
@@ -200,9 +204,12 @@
               <h3>Shilpa Sangappa</h3>
               <p>Student, Research Intern</p>
               <ul class="list-inline">
-                <li><a href="https://github.com/ShilpaSangappa"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/shilpa-sangappa-11b23314/"><i class="fa fa-linkedin"></i></a>
-                <li><a href="https://www.facebook.com/shilpa.sangappa"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/ShilpaSangappa" aria-label="github"><i class="fa fa-github"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/shilpa-sangappa-11b23314/" aria-label="linkedin"><i
+                      class="fa fa-linkedin"></i></a>
+                <li><a href="https://www.facebook.com/shilpa.sangappa" aria-label="facebook"><i
+                      class="fa fa-facebook"></i></a></li>
                 </li>
               </ul>
             </div>
@@ -218,11 +225,15 @@
               <h3>Nimish Bongale</h3>
               <p>Student, Intern</p>
               <ul class="list-inline">
-                <li><a href="https://github.com/nimishbongale"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/nimish-bongale/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://www.quora.com/profile/Nimish-Bongale"><i class="fa fa-quora"></i></a></li>
-                <li><a href="https://www.facebook.com/nimish.bongale"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/nimishbongale/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/nimishbongale" aria-label="github"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nimish-bongale/" aria-label="linkedin"><i
+                      class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://www.quora.com/profile/Nimish-Bongale" aria-label="quora"><i
+                      class="fa fa-quora"></i></a></li>
+                <li><a href="https://www.facebook.com/nimish.bongale" aria-label="facebook"><i
+                      class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/nimishbongale/" aria-label="instagram"><i
+                      class="fa fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
@@ -236,10 +247,14 @@
               <h3>Mounica Narkedamilli</h3>
               <p>TCS Employee</p>
               <ul class="list-inline">
-                <li><a href="https://github.com/MounicaNarkedamilli"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/narkedamillimounica"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/B_as_U_like"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/mounica.narkedamilli"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/MounicaNarkedamilli" aria-label="github"><i
+                      class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/narkedamillimounica" aria-label="linkedin"><i
+                      class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/B_as_U_like" aria-label="twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/mounica.narkedamilli" aria-label="facebook"><i
+                      class="fa fa-facebook"></i></a></li>
               </ul>
             </div>
           </div>
@@ -248,7 +263,7 @@
     </div>
     </div>
   </section>
- 
+
   <!--/ testimonial-->
   <!--cta 2-->
   <section id="cta-2" class="section-padding">
@@ -293,30 +308,34 @@
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
               <div class="form-group">
-                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name"
-                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <label>Name
+                  <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name"
+                    data-rule="minlen:4" data-msg="Please enter at least 4 chars" /></label>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email"
-                  data-rule="email" data-msg="Please enter a valid email" />
+                <label>E-mail
+                  <input type="email" class="form-control br-radius-zero" name="email" id="email"
+                    placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /></label>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control br-radius-zero" name="subject" id="subject" placeholder="Subject"
-                  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <label>Subject
+                  <input type="text" class="form-control br-radius-zero" name="subject" id="subject"
+                    placeholder="Subject" data-rule="minlen:4"
+                    data-msg="Please enter at least 8 chars of subject" /></label>
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required"
-                  data-msg="Please write something for us" placeholder="Message"></textarea>
+                <label>Message
+                  <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required"
+                    data-msg="Please write something for us" placeholder="Message"></textarea></label>
                 <div class="validation"></div>
               </div>
 
               <div class="form-action">
                 <button type="submit" class="btn btn-form">Send Message</button>
-                <label>(or alternatively, write an email to us <a
-                    href="mailto:lostandfoundry123@gmail.com">here</a>)</label>
+                <label>(or alternatively, write an<a href="mailto:lostandfoundry123@gmail.com">email</a>to us)</label>
               </div>
             </form>
           </div>
@@ -373,6 +392,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script>
+    if ('serviceWorker' in window.navigator) {
+      navigator.serviceWorker.register('js/service-worker.js');
+    }
+  </script>
 
 </body>
 
