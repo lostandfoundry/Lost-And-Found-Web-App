@@ -1,9 +1,12 @@
+//Main Server File
+
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var neo4j = require('neo4j-driver').v1;
 
+//ExpressJS
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'))
@@ -15,9 +18,11 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(__dirname + "/public"));
 
+//Initialize neo4j driver
 var driver = neo4j.driver('bolt://hobby-nimcknmcieflgbkepkpnpidl.dbs.graphenedb.com:24787', neo4j.auth.basic('myapp', 'b.yntraNmvs9zf.OB5EVHINaBBWtc3M'))
 var session = driver.session()
 
+//app getters and posters
 app.get("/", (req, res) => {
     res.render("index.ejs");
 })
@@ -143,6 +148,7 @@ app.post('/claim/person/person', function (req, res) {
             console.log(err)
         })
 })
+
 app.post('/person/add', function (req, res) {
     var name1 = req.body.name;
     var rol1 = req.body.role
@@ -200,7 +206,6 @@ app.post('/person/del', function (req, res) {
             console.log(err)
         })
 })
-
 
 app.post('/person/link', function (req, res) {
     var name1 = req.body.name1;
@@ -269,6 +274,7 @@ app.post('/person/link', function (req, res) {
             })
 })
 
+//process.env.PORT for listening to the correct port after deployment
 app.listen(process.env.PORT || 3000)
 console.log('Server started!')
 
