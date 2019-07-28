@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
       url: action,
       data: str,
       success: function (msg) {
-        alert("Task carried out successfully!\nScroll down to see the results.\nPlease click on OK to proceed.")
+        alert("Task carried out successfully!\nPlease click on OK to proceed.")
         document.location.reload()
       }
     });

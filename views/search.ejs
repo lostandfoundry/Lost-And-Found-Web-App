@@ -163,6 +163,20 @@
                             <div class="form-action">
                                 <button type="submit" value="submit" class="btn btn-form">Initiate
                                     Search</button><br><br>
+                                <label>* Searches are fast to be processed. The page may simply refresh (without
+                                    confirmation), but be assured
+                                    of the fact that your search has been successfully carried out.&nbsp;&nbsp;<i
+                                        class="fa fa-check-circle"></i><br><br>
+                                    * Specific requests to do with the specific health of the searched entity will be
+                                    provided
+                                    via e-mail, upon demand.
+                                </label>
+                                <br><br>
+                                <label>* We use <a
+                                        href="https://neo4j.com/docs/graph-algorithms/current/algorithms/community/">Community
+                                        Detection Graph Algorithms (CDGA)</a> to study and analyze our graphDB.
+                                </label>
+                                <br><br>
                                 <label>(After the page refreshes, please scroll down to see the
                                     results or alternatively click on the "Go to results" button)&nbsp;&nbsp;
                                     <i class="fa fa-arrow-circle-down"></i>
@@ -191,6 +205,10 @@
                             <%= person.safe%><br>
                             <label>Geo-location : </label>
                             <%= person.geo%><br>
+                            <label>Condition : </label>
+                            <%= person.cond %><br>
+                            <label>Message : </label>
+                            <%= person.msg %><br>
                         </li>
                         <% }) %>
                     </ul>

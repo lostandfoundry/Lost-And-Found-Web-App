@@ -33,7 +33,7 @@ app.get("/claim", (req, res) => {
 
 app.get('/populate', function (req, res) {
     session
-        .run("START t=node(*) RETURN t SKIP 1 LIMIT 10")
+        .run("START t=node(*) RETURN t")
         .then(function (result) {
             var peopleArr = []
             result.records.forEach(function (record) {
@@ -56,7 +56,7 @@ app.get('/populate', function (req, res) {
 
 app.get('/search', function (req, res) {
     session
-        .run("START n=node(*) RETURN n LIMIT 10")
+        .run("START n=node(*) RETURN n LIMIT 0")
         .then(function (result) {
             var peopleArr = []
             result.records.forEach(function (record) {
@@ -64,7 +64,6 @@ app.get('/search', function (req, res) {
                     id: record._fields[0].identity.low,
                     title: record._fields[0].properties.name,
                     safe: record._fields[0].properties.safe,
-                    geo: record._fields[0].properties.geo,
                 })
             })
 
@@ -92,6 +91,8 @@ app.post('/search', function (req, res) {
                     title: record._fields[0].properties.name,
                     safe: record._fields[0].properties.safe,
                     geo: record._fields[0].properties.geo,
+                    cond: record._fields[0].properties.cond,
+                    msg: record._fields[0].properties.msg,
                 })
             })
             session
@@ -103,6 +104,8 @@ app.post('/search', function (req, res) {
                             title: record._fields[0].properties.name,
                             safe: record._fields[0].properties.safe,
                             geo: record._fields[0].properties.geo,
+                            cond: record._fields[0].properties.cond,
+                            msg: record._fields[0].properties.msg,
                         })
                     })
                     session
@@ -114,6 +117,8 @@ app.post('/search', function (req, res) {
                                     title: record._fields[0].properties.name,
                                     safe: record._fields[0].properties.safe,
                                     geo: record._fields[0].properties.geo,
+                                    cond: record._fields[0].properties.cond,
+                                    msg: record._fields[0].properties.msg,
                                 })
                             })
                             res.render('search.ejs', {
@@ -139,7 +144,7 @@ app.post('/claim/person/person', function (req, res) {
     var custommsg = req.body.custommsg;
 
     session
-        .run("MATCH (n { name: {nameParam}}) SET n.safe = true SET n.geo={geoParam}", { nameParam: name, geoParam: geo1 })
+        .run("MATCH (n { name: {nameParam}}) SET n.safe = true SET n.geo={geoParam} SET n.cond={condParam} SET n.msg={msgParam}", { nameParam: name, geoParam: geo1, condParam: condition, msgParam: custommsg })
         .then(function (result) {
             res.redirect('/claim#about')
             session.close()
