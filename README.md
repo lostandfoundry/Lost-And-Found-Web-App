@@ -19,7 +19,6 @@ A complete Web Application implementing the lostandfound concept, built using th
 * [Debug](#debug)
 
 
-
 <a name="enablement"></a>
 ### IBM Cloud Enablement
 
